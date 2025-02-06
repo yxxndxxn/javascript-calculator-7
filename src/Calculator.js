@@ -11,7 +11,7 @@ export default function Calculator() {
         return { delimiter, numbers };
       }
     }
-    return { delimiter, numbers };
+    return { delimiter: null, numbers: input }; //기본값 설정
   };
 
   const splitDelimiter = (input) => {

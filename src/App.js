@@ -7,7 +7,7 @@ class App {
       const input = await Console.readLineAsync("문자열을 입력해 주세요: ");
       const result = calculator.add(input);
 
-      Console.print(`계산 결과: ${result}`);
+      Console.print(`결과 : ${result}`);
     } catch (error) {
       throw new Error(`[ERROR] ${error.message}`);
     } finally {

@@ -1,6 +1,5 @@
 export default function Calculator() {
   const customDelimiter = (input) => {
-    //스타트 끊고
     if (input.startsWith("//")) {
       const endDelimiter = input.indexOf("\\n"); //마지막 찾기
       if (endDelimiter == -1) {
@@ -16,7 +15,6 @@ export default function Calculator() {
   };
 
   const splitDelimiter = (input) => {
-    //여기서 커스텀 구분자면 그걸로 하고 아니면 기본 구분자로 return하기
     const { delimiter, numbers } = customDelimiter(input);
     //커스텀 구분자
     if (delimiter) {

@@ -1,5 +1,5 @@
 import { Console } from "@woowacourse/mission-utils";
-import Calculator from "./Calculator.js";
+import Calculator from "./Calculator";
 class App {
   async run() {
     try {
@@ -9,7 +9,7 @@ class App {
 
       Console.print(`계산 결과: ${result}`);
     } catch (error) {
-      Console.print(error.message);
+      throw new Error(`[ERROR] ${error.message}`);
     } finally {
     }
   }

@@ -6,6 +6,8 @@ export default function Calculator() {
       const parsed = Number(num.trim());
       if (isNaN(parsed)) {
         throw new Error("숫자가 아닙니다.");
+      } else if (parsed < 0) {
+        throw new Error("양수가 아닙니다.");
       }
       return parsed;
     });
